@@ -2,7 +2,14 @@
 title: "DISCRETISATION"
 author: "Anna MAUCLET"
 date: "30/03/2022"
-output: html_document
+output: 
+  html_document: 
+    number_sections: yes
+    toc: yes
+editor_options: 
+  chunk_output_type: console
+---
+
 
 ---
 
@@ -20,9 +27,11 @@ Puis, j'utilise les commandes st read et read.csv pour lire mes fichiers.
 ```{r}
 library(sf)
 library(mapsf)
-setwd("C:/Users/HP/Documents/R/DISCRETISATION")
-st_read("vote.gpkg")
+setwd("C:/Users/HP/Documents/R/Discretisation Exercice Projet/script")
+getwd()
 ```
+
+
 ```{r}
 read.csv("bondyInsee.csv")
 ```
